@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f6b73c"/>
+      <stop offset="1" stop-color="#c96f0c"/>
+    </linearGradient>
+  </defs>
+  <polygon points="32,2 59,17 59,47 32,62 5,47 5,17" fill="url(#g)"/>
+  <text x="32" y="33" text-anchor="middle" dominant-baseline="central" font-family="Georgia, serif" font-weight="700" font-size="24" fill="#14161f">BH</text>
+</svg>

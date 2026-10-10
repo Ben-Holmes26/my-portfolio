@@ -1,178 +1,405 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Ben Holmes - Portfolio</title>
-    <link rel="stylesheet" href="./style.css"/>
-    <script src="./script.js"></script>
-  </head>
-  <body>
-    <!-- Navigation Bar -->
-    <nav>
-      <div id="home">
-        <div class="profile_name">
-          Ben Holmes
-          <div class="contact_info">
-            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
-          bholmes@example.com
+
+<html lang="en-GB">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Ben Holmes" />
+    <meta name="description" content="Ben Holmes — Software Engineer in Lancashire, UK. .NET developer building business systems, cross-platform apps and AI-powered tools." />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#faf7f2" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#121319" media="(prefers-color-scheme: dark)">
+    <meta property="og:title" content="Ben Holmes — Software Engineer" />
+    <meta property="og:description" content=".NET developer building business systems, cross-platform apps and AI-powered tools." />
+    <meta property="og:type" content="website" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Ben Holmes | Software Engineer</title>
+</head>
+<body>
+    <header class="site-header">
+        <nav class="navbar" aria-label="Main">
+            <a href="#top" class="brand">
+                <span class="brand-hex" aria-hidden="true">BH</span>
+                <span>Ben Holmes</span>
+            </a>
+
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="nav-menu" id="navMenu">
+                <ul class="nav-links">
+                    <li><a href="#impact">Impact</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                </ul>
+                <a href="#contact" class="btn btn-primary">Get in touch</a>
+            </div>
+        </nav>
+    </header>
+
+    <main id="top">
+        <section class="hero">
+            <div class="hero-copy">
+                <p class="eyebrow">Software Engineer · Lancashire, UK</p>
+                <h1>Hi, I'm Ben.<br>I build software that <span class="accent">makes work flow.</span></h1>
+                <p class="hero-sub">
+                    I'm a .NET developer with three years' hands-on experience building in-house
+                    business systems, and I'm now growing into cloud platforms, cross-platform apps
+                    and AI integration.
+                </p>
+                <div class="hero-ctas">
+                    <a href="#projects" class="btn btn-primary btn-large">View my projects</a>
+                    <a href="#contact" class="btn btn-outline btn-large">Get in touch</a>
+                </div>
+                <ul class="hero-trust">
+                    <li>First Class Honours, Lancaster University</li>
+                    <li>70% faster ordering at work</li>
+                    <li>Building MomentHive</li>
+                </ul>
+            </div>
+
+            <div class="hero-art" aria-hidden="true">
+                <svg viewBox="78 24 324 308" class="hex-cluster">
+                    <defs>
+                        <linearGradient id="heroGold" x1="0" y1="0" x2="1" y2="1">
+                            <stop offset="0" stop-color="#f6b73c" />
+                            <stop offset="1" stop-color="#c96f0c" />
+                        </linearGradient>
+                    </defs>
+                    <polygon class="hex" points="188,34 236.5,62 236.5,118 188,146 139.5,118 139.5,62" />
+                    <polygon class="hex hex-fill" points="292,34 340.5,62 340.5,118 292,146 243.5,118 243.5,62" />
+                    <polygon class="hex hex-fill" points="136,124 184.5,152 184.5,208 136,236 87.5,208 87.5,152" />
+                    <polygon class="hex-core" points="240,124 288.5,152 288.5,208 240,236 191.5,208 191.5,152" fill="url(#heroGold)" />
+                    <polygon class="hex" points="344,124 392.5,152 392.5,208 344,236 295.5,208 295.5,152" />
+                    <polygon class="hex" points="188,214 236.5,242 236.5,298 188,326 139.5,298 139.5,242" />
+                    <polygon class="hex hex-fill" points="292,214 340.5,242 340.5,298 292,326 243.5,298 243.5,242" />
+                    <text class="hex-label" x="188" y="90">C#</text>
+                    <text class="hex-label" x="292" y="90">.NET</text>
+                    <text class="hex-label small" x="136" y="180">SQL</text>
+                    <text class="hex-label core" x="240" y="180">{ }</text>
+                    <text class="hex-label small" x="344" y="180">MAUI</text>
+                    <text class="hex-label small" x="188" y="270">Azure</text>
+                    <text class="hex-label" x="292" y="270">AI</text>
+                </svg>
+            </div>
+        </section>
+
+        <div class="band">
+            <section id="impact">
+                <p class="eyebrow center">Impact at work</p>
+                <h2 class="section-title center">Turning a manual ordering process into a single drag and drop</h2>
+                <p class="section-lead center">
+                    At Affordable Window Systems I redeveloped how glass units are ordered, replacing a
+                    manual process with an automated CSV and EDI link that now handles thousands of
+                    units a week. It also formed my university dissertation.
+                </p>
+
+                <div class="impact-grid">
+                    <article class="stat">
+                        <span class="stat-hex">70%</span>
+                        <h3>Faster ordering</h3>
+                        <p>Reduction in the time taken to order materials in-house.</p>
+                    </article>
+                    <article class="stat">
+                        <span class="stat-hex">95%</span>
+                        <h3>Fewer in-house errors</h3>
+                        <p>Reduction in errors caused by manual data entry.</p>
+                    </article>
+                    <article class="stat">
+                        <span class="stat-hex">99%</span>
+                        <h3>Fewer supplier errors</h3>
+                        <p>Reduction in human error on the supplier's side of every order.</p>
+                    </article>
+                    <article class="stat">
+                        <span class="stat-hex icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/><path d="M12 17v-6"/><path d="M9 14l3 3 3-3"/></svg>
+                        </span>
+                        <h3>Minutes to one file</h3>
+                        <p>Supplier order entry went from minutes or hours per order to a single file drop.</p>
+                    </article>
+                </div>
+
+                <div class="case-study">
+                    <div>
+                        <h3>Glass-ordering module for an in-house CRM</h3>
+                        <p>
+                            Built in VB.NET as a new module of the company's CRM, it generates
+                            structured order files and sends them straight to the supplier over EDI
+                            (electronic data interchange), so no one has to re-key an order.
+                        </p>
+                        <p>
+                            I worked with stakeholders on both sides to map the existing workflow,
+                            find where errors crept in, and make sure the new process matched how
+                            the business actually operates.
+                        </p>
+                    </div>
+                    <div>
+                        <h4>Tools used</h4>
+                        <div class="chips">
+                            <span class="chip chip-gold">VB.NET</span>
+                            <span class="chip">Visual Studio</span>
+                            <span class="chip">SQL</span>
+                            <span class="chip">CSV / EDI</span>
+                            <span class="chip">GitHub</span>
+                            <span class="chip">GitHub Copilot</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
-        <div style="clear:both;"></div>
-        <div class="contact_info">
-          <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
-          +13456764598
 
+        <section id="projects">
+            <p class="eyebrow center">Current projects</p>
+            <h2 class="section-title center">What I'm building outside the day job</h2>
+            <p class="section-lead center">
+                Side projects are where I push into technologies I don't use every day, from
+                product design to cloud hosting to OCR and local AI.
+            </p>
+
+            <article class="project-featured">
+                <div class="project-visual">
+                    <img src="images/momenthive-logo.png" alt="MomentHive logo">
+                </div>
+                <div class="project-body">
+                    <span class="project-tag">Featured · Live</span>
+                    <h3>MomentHive</h3>
+                    <p>
+                        An event photo-sharing platform. Guests join with a link or QR code and upload
+                        photos straight from their phone, with no app or account needed. Organisers get
+                        every angle of the day in one gallery and decide who can download what.
+                    </p>
+                    <ul class="hex-list">
+                        <li>Designed and built the product and its marketing site, which inspired this page's look</li>
+                        <li>Guest uploads without sign-up, organiser download controls and bulk downloads</li>
+                        <li>Responsive, accessible front end in hand-written HTML, CSS and JavaScript</li>
+                    </ul>
+                    <div class="chips">
+                        <span class="chip">HTML</span>
+                        <span class="chip">CSS</span>
+                        <span class="chip">JavaScript</span>
+                        <span class="chip">Product design</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://momenthive.amfteksolutions.co.uk/" class="btn btn-primary" target="_blank" rel="noopener">
+                            Visit MomentHive
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <div class="project-grid">
+                <article class="project-card">
+                    <div class="project-card-head">
+                        <div class="feature-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h3l1.5-2h7L17 8h3a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z"/><path d="M8 13h8M8 16h5"/></svg>
+                        </div>
+                        <div>
+                            <h3>FilletTrackOS</h3>
+                            <p class="status">In development · Self-hosted</p>
+                        </div>
+                    </div>
+                    <p>
+                        Turns photos of handwritten fish-filleting tally sheets into priced, payable records.
+                        A phone snaps the sheet, an OCR pipeline reads the rows, and the system matches
+                        workers and fish types, prices every line and tracks payment. Uncertain reads are
+                        always flagged for a person to confirm and never guessed.
+                    </p>
+                    <ul class="hex-list">
+                        <li>Clean-architecture .NET solution, with multi-tenant data isolation built in from the start</li>
+                        <li>Python OCR sidecar (PaddleOCR), with an optional local LLM through Ollama</li>
+                        <li>Integration tests covering the full upload → review → approve → pay flow</li>
+                    </ul>
+                    <div class="chips">
+                        <span class="chip chip-gold">C#</span>
+                        <span class="chip chip-gold">ASP.NET Core</span>
+                        <span class="chip">Blazor</span>
+                        <span class="chip">EF Core</span>
+                        <span class="chip">PostgreSQL</span>
+                        <span class="chip">Python</span>
+                        <span class="chip">Docker</span>
+                        <span class="chip">xUnit</span>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-card-head">
+                        <div class="feature-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg>
+                        </div>
+                        <div>
+                            <h3>HR &amp; clock-in web app</h3>
+                            <p class="status">In progress · Learning project</p>
+                        </div>
+                    </div>
+                    <p>
+                        A web application for managing employees and clocking them in with biometrics.
+                        I'm building it deliberately in technologies outside my .NET comfort zone,
+                        taking my time to lay a strong foundation in each one.
+                    </p>
+                    <ul class="hex-list">
+                        <li>REST API back end in Python</li>
+                        <li>Relational data modelling in PostgreSQL</li>
+                        <li>Biometric clock-in flow for staff</li>
+                    </ul>
+                    <div class="chips">
+                        <span class="chip chip-gold">Python</span>
+                        <span class="chip">REST APIs</span>
+                        <span class="chip">PostgreSQL</span>
+                        <span class="chip">HTML</span>
+                        <span class="chip">CSS</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <div class="band">
+            <section id="experience">
+                <p class="eyebrow center">Experience &amp; education</p>
+                <h2 class="section-title center">Where I've been learning and shipping</h2>
+                <p class="section-lead center">
+                    I grew from IT support into software engineering at the same company, while
+                    earning a First Class degree from Lancaster University.
+                </p>
+
+                <ol class="timeline">
+                    <li class="timeline-item">
+                        <span class="timeline-marker" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 18l6-6-6-6"/><path d="M8 6l-6 6 6 6"/></svg>
+                        </span>
+                        <div class="timeline-card">
+                            <p class="timeline-meta">2022 – Present</p>
+                            <h3>Software Engineer</h3>
+                            <p class="org">Affordable Window Systems · with the company since 2017</p>
+                            <ul class="hex-list">
+                                <li>Develop the in-house CRM, leading small projects and debugging a large existing codebase, both independently and as part of a team</li>
+                                <li>Work with stakeholders to map current workflows and find areas to improve</li>
+                                <li>Delivered the automated glass-ordering module (see <a href="#impact">Impact</a>)</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="timeline-item">
+                        <span class="timeline-marker" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10L12 5 2 10l10 5 10-5z"/><path d="M6 12v5c3 2 9 2 12 0v-5"/></svg>
+                        </span>
+                        <div class="timeline-card">
+                            <p class="timeline-meta">2022 – 2025</p>
+                            <h3>BSc Digital &amp; Technology Solutions</h3>
+                            <p class="org">Lancaster University · First Class Honours</p>
+                            <ul class="hex-list">
+                                <li>Dissertation: the automated CSV / EDI glass-ordering system, built for and deployed at Affordable Window Systems</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="timeline-item">
+                        <span class="timeline-marker" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.8 4.6L18.5 9l-4.7 1.4L12 15l-1.8-4.6L5.5 9l4.7-1.4z"/><path d="M19 15l.8 2 2 .8-2 .8-.8 2-.8-2-2-.8 2-.8z"/></svg>
+                        </span>
+                        <div class="timeline-card">
+                            <p class="timeline-meta">In progress</p>
+                            <h3>IBM AI Developer Professional Certificate</h3>
+                            <p class="org">Generative AI, prompt engineering and AI apps in Python</p>
+                            <div class="chips">
+                                <span class="chip">Software Engineering</span>
+                                <span class="chip">Generative AI</span>
+                                <span class="chip">Prompt Engineering</span>
+                                <span class="chip">Python for Data Science &amp; AI</span>
+                                <span class="chip">Flask</span>
+                                <span class="chip">HTML, CSS &amp; JS</span>
+                            </div>
+                        </div>
+                    </li>
+                </ol>
+            </section>
         </div>
+
+        <section id="skills">
+            <p class="eyebrow center">Skills</p>
+            <h2 class="section-title center">The toolkit I bring, and where it's growing</h2>
+            <p class="section-lead center">
+                Strong in the Microsoft stack, comfortable debugging large codebases, and always
+                learning something new.
+            </p>
+
+            <div class="skills-grid">
+                <div class="skill-group">
+                    <h3>Core stack</h3>
+                    <div class="chips">
+                        <span class="chip chip-gold">C#</span>
+                        <span class="chip chip-gold">VB.NET</span>
+                        <span class="chip chip-gold">.NET</span>
+                        <span class="chip">.NET MAUI</span>
+                        <span class="chip">ASP.NET Core</span>
+                        <span class="chip">Blazor</span>
+                        <span class="chip">SQL</span>
+                        <span class="chip">SQLite</span>
+                        <span class="chip">PostgreSQL</span>
+                        <span class="chip">REST APIs</span>
+                        <span class="chip">Microsoft Entra ID</span>
+                        <span class="chip">Git &amp; GitHub</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <h3>Currently exploring</h3>
+                    <div class="chips">
+                        <span class="chip chip-gold">Python for AI</span>
+                        <span class="chip chip-gold">Azure</span>
+                        <span class="chip">Generative AI</span>
+                        <span class="chip">Docker</span>
+                        <span class="chip">HTML</span>
+                        <span class="chip">CSS</span>
+                        <span class="chip">JavaScript</span>
+                        <span class="chip">Data structures &amp; algorithms</span>
+                        <span class="chip">Mathematics</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <h3>How I work</h3>
+                    <ul class="hex-list">
+                        <li>Analytical problem solving and debugging</li>
+                        <li>Project management from requirements to release</li>
+                        <li>Clear communication with stakeholders</li>
+                        <li>Collaborative, and just as happy working solo</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="cta-section">
+            <div class="cta-banner">
+                <div class="cta-hex" aria-hidden="true"></div>
+                <div class="cta-hex left" aria-hidden="true"></div>
+                <h2>Let's build something <span class="accent">worth keeping.</span></h2>
+                <p>Open to conversations about software engineering roles, collaborations, or anything you've seen here.</p>
+                <div class="hero-ctas">
+                    <a href="mailto:bholmes26@hotmail.com" class="btn btn-primary btn-large">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+                        bholmes26@hotmail.com
+                    </a>
+                    <a href="https://www.linkedin.com/in/bholmes26" class="btn btn-outline btn-large" target="_blank" rel="noopener">LinkedIn</a>
+                    <a href="https://github.com/Ben-Holmes26" class="btn btn-outline btn-large" target="_blank" rel="noopener">GitHub</a>
+                </div>
+                <p class="cta-location">Based in Lancashire, United Kingdom</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <p>&copy; 2026 Ben Holmes</p>
+            <p>Design inspired by <a href="https://momenthive.amfteksolutions.co.uk/" target="_blank" rel="noopener">MomentHive</a></p>
         </div>
-        <div class="topdiv">
-          <a class="topmenu" href="#about-me">About Me</a>
-          <!-- Add the links for Skills, Projects and Recommendation here -->
-            <a class="topmenu" href="#Skills">Skills</a>
-            <a class="topmenu" href="#Projects">Projects</a>
-            <a class="topmenu" href="#Recommendations">Recommendations</a>
-        </div>
-      </div>    
-    </nav>
+    </footer>
 
-    <!-- About Me -->
-    <section id="about-me" class="container">
-      <div>
-        <img src="https://miro.medium.com/max/1400/1*qdAW1TjCN57h1lbuuzvchg.gif" class="profile_image"/>
-      </div>
+    <script src="scripts/main.js"></script>
+</body>
 
-      <div>
-          <h1>
-            Hi, I'm Ben Holmes! <img src="html_finalprojimages/Squirrel.jpg" width="60px"/>
-          </h1>
-          <p>
-            I am a software developer with 5 years of experience building modern web applications that are fast, responsive, and user-friendly. 
-            I enjoy turning complex problems into clean, practical solutions using current web technologies. 
-            I am passionate about writing maintainable code and creating digital experiences that make a real impact.
-          </p>
-      </div>
-    </section>
-              
-    <!-- Skills -->
-    <section id="skills">
-      <h2>Skills</h2>
-      <div style="clear:both;"></div>
-
-      <div class="all_skills">
-        <div class="skill">
-          <img src="html_finalprojimages/html_logo.png"/>
-          <h6>HTML</h6>
-          <p>2 years experience</p>
-        </div>  
-
-        <div class="skill">
-          <img src="html_finalprojimages/javascript_logo.png"/>
-          <h6>JavaScript</h6>
-          <p>3 years experience</p>
-        </div>  
-
-        <!-- Add more skills here -->
-        <div class="skill">
-            <img src="html_finalprojimages/c_sharp_logo.png"/>
-            <h6>C #</h6>
-            <p>1 year experience</p>
-          </div> 
-
-          <div class="skill">
-            <img src="html_finalprojimages/c_plus_plus_logo.png"/>
-            <h6>C ++</h6>
-            <p>2 years experience</p>
-          </div> 
-
-          <div class="skill">
-            <img src="html_finalprojimages/postgresql_logo.png"/>
-            <h6>Postgresql</h6>
-            <p>3 years experience</p>
-          </div> 
-
-      </div>
-    </section>
-          
-    <!-- Projects -->
-    <section class="projects" id="projects">
-      <h2>
-        Projects
-      </h2>
-      <div style="clear:both;"></div>
-
-        <div id="projects-container" class="projects-container">
-          <div class="project-card">
-            <h3>Taskflow</h3>
-            <ul>
-              <li>A responsive task management web app that allows users to create projects, assign tasks, set deadlines, and track progress through a clean dashboard interface.</li>
-            </ul>
-          </div>
-          <hr>
-          <div class="project-card">
-            <h3>Shop Easy</h3>
-            <ul>
-              <li>A modern e-commerce platform with product filtering, shopping cart functionality, secure checkout flow, and an admin panel for managing inventory and orders.</li>
-            </ul>
-          </div>
-          <hr>
-          <div class="project-card">
-            <h3>Fit Track</h3>
-            <ul>
-              <li>A fitness tracking application where users can log workouts, monitor progress, set weekly goals, and view performance summaries through interactive charts.</li>
-            </ul>
-          </div>
-    </div>
-    </section>
-    <div style="clear:both;"></div>
-
-    <!-- Recommendations -->
-    <section id="recommendations">
-      <h2>Recommendations</h2>
-      <div style="clear:both;"></div>
-      <div class="all_recommendations" id="all_recommendations">
-        <div class="recommendation">
-          <span>&#8220;</span>
-          Working with Ben was a pleasure. He transformed our vague product ideas into a fast, reliable platform and communicated technical decisions clearly throughout the entire project.
-          <span>&#8221;</span>
-        </div>
-        <div class="recommendation">
-          <span>&#8220;</span>
-          Ben consistently delivered clean, maintainable code and brought thoughtful solutions to complex problems. Their attention to detail made a noticeable difference in our team’s productivity.
-          <span>&#8221;</span>
-        </div>
-        <div class="recommendation">
-          <span>&#8220;</span>
-          We hired Ben to improve our web application, and the results exceeded expectations. Performance improved dramatically, bugs decreased, and the user experience felt much more polished.
-          <span>&#8221;</span>
-        </div>
-      </div>
-    </section>
-
-    <!-- Recommendation Form -->
-    <section id="contact">
-      <div class="flex_center">
-        <fieldset>
-          <legend class="introduction">Leave a Recommendation</legend>          
-          <input type="text" placeholder="Name (Optional)"> <br/>
-          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
-          <div class="flex_center">
-            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
-          </div>
-        </fieldset>
-      </div>
-    </section>
-
-    <div class="iconbutton">
-      <a href="#home">
-        <!--Add the code here for the logo to appear and the icon to be actionable-->
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-          </svg>          
-      </a>
-    </div>
-
-    <div class="popup" id="popup" class="flex_center">
-      <img src="html_finalprojimages/checkmark--outline.svg"/>
-      <h3>Thank You For Leaving a Recommendation!</h3>
-
-      <button onclick="showPopup(false)">Ok</button>
-    </div>
-  </body>
 </html>
