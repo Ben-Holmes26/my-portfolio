@@ -15,8 +15,9 @@ comes from [MomentHive](https://momenthive.amfteksolutions.co.uk/), one of the f
 
 `momenthive/` is a copy, so re-copy it whenever the MomentHive-Web site changes. The demo `login.html`/`signup.html` pages are
 deliberately excluded. `contact.html` here uses bholmes26@hotmail.com instead of the not-yet-live hello@momenthive.app.
-The "Most popular" badge on `pricing.html` is also removed here, because there are no customers yet.
-After re-copying, reapply both changes.
+The "Most popular" badge on `pricing.html` is also removed here, because there are no customers yet. Guest downloads are
+marked "coming soon" (pricing FAQ and plan list, about.html, and two spots on index.html), because they aren't enabled until
+guest consent is handled. After re-copying, reapply these changes.
 
 ```powershell
 Copy-Item C:\ClaudeWork\MomentHive-Web\index.html,C:\ClaudeWork\MomentHive-Web\about.html,C:\ClaudeWork\MomentHive-Web\pricing.html,C:\ClaudeWork\MomentHive-Web\contact.html momenthive\; Copy-Item C:\ClaudeWork\MomentHive-Web\styles,C:\ClaudeWork\MomentHive-Web\scripts,C:\ClaudeWork\MomentHive-Web\images momenthive\ -Recurse -Force
