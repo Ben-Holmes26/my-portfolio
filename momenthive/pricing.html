@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+
+<html lang="en-uk">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Ben Holmes" />
+    <meta name="description" content="Simple, event-based pricing for MomentHive — pay for the event you're hosting, not a subscription you forget about." />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Pricing — MomentHive</title>
+</head>
+<body>
+    <header class="site-header">
+        <nav class="navbar">
+            <div class="brand">
+                <a href="index.html"><img src="images/momenthive-logo-transluscent.png" alt="MomentHive Logo"></a>
+            </div>
+
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="nav-menu" id="navMenu">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="pricing.html" aria-current="page" class="active">Pricing</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+
+                <div class="nav-actions">
+                    <a href="https://momenthive.amfteksolutions.co.uk/Account/Login" class="btn btn-ghost">Log in</a>
+                    <a href="https://momenthive.amfteksolutions.co.uk/Account/Register" class="btn btn-primary">Sign up</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="page-hero-inner">
+                <p class="eyebrow center">Pricing</p>
+                <h1>Pay for the event you're hosting, not a subscription you forget about</h1>
+                <p>Most people only need MomentHive a handful of times a year. So pricing is built around your event first — with a plan for planners who host more often.</p>
+            </div>
+        </section>
+
+        <section class="pricing">
+            <div class="pricing-grid">
+                <div class="price-card">
+                    <p class="price-name">Gathering</p>
+                    <p class="price-tagline">Perfect for small get-togethers</p>
+                    <p class="price-amount">Free</p>
+                    <ul class="price-features">
+                        <li>1 active event</li>
+                        <li>Up to 40 guest photos</li>
+                        <li>Guest uploads via link or QR code</li>
+                        <li>Organiser downloads</li>
+                        <li>Gallery kept for 14 days</li>
+                    </ul>
+                    <a href="https://momenthive.amfteksolutions.co.uk/Account/Register?plan=Gathering" class="btn btn-outline">Start for free</a>
+                </div>
+
+                <div class="price-card featured">
+                    <span class="price-badge">Most popular</span>
+                    <p class="price-name">Event</p>
+                    <p class="price-tagline">One payment, one event, no limits</p>
+                    <p class="price-amount">£12<span> / event</span></p>
+                    <ul class="price-features">
+                        <li>Unlimited photos</li>
+                        <li>Unlimited guests</li>
+                        <li>Option to let guests download too</li>
+                        <li>Gallery kept for 6 months</li>
+                        <li>Priority photo processing</li>
+                    </ul>
+                    <a href="https://momenthive.amfteksolutions.co.uk/Account/Register?plan=Event" class="btn btn-primary">Choose Event</a>
+                </div>
+
+                <div class="price-card">
+                    <p class="price-name">Host</p>
+                    <p class="price-tagline">For planners running events year-round</p>
+                    <p class="price-amount">£15<span> / month</span></p>
+                    <ul class="price-features">
+                        <li>Unlimited events</li>
+                        <li>Everything in Event</li>
+                        <li>Custom event branding</li>
+                        <li>Galleries kept while subscribed</li>
+                        <li>Early access to new features</li>
+                    </ul>
+                    <a href="https://momenthive.amfteksolutions.co.uk/Account/Register?plan=Host" class="btn btn-outline">Choose Host</a>
+                </div>
+            </div>
+
+            <p class="pricing-note">Prices shown in GBP. MomentHive is still in development, so final pricing may change before launch.</p>
+        </section>
+
+        <section class="faq-section">
+            <p class="eyebrow center">Questions</p>
+            <h2 class="section-title center">Pricing, answered</h2>
+
+            <div class="faq">
+                <details open>
+                    <summary>Do photos expire?</summary>
+                    <p>Each plan keeps your gallery for a set window after the event — 14 days on Gathering, 6 months on Event, and for as long as you're subscribed on Host. You can always download everything before it's removed.</p>
+                </details>
+                <details>
+                    <summary>Can guests download photos too?</summary>
+                    <p>Yes. On the Event and Host plans, you can choose to let every guest download the full gallery for themselves, rather than only the organiser.</p>
+                </details>
+                <details>
+                    <summary>What happens after my event ends?</summary>
+                    <p>Nothing changes automatically — your gallery stays exactly as it is until the storage window for your plan runs out, so there's no rush to download everything the next morning.</p>
+                </details>
+                <details>
+                    <summary>Can I upgrade from Gathering later?</summary>
+                    <p>Yes, you can upgrade an existing event to a paid plan at any point if you need more space, more guests, or a longer storage window.</p>
+                </details>
+                <details>
+                    <summary>Is there a limit on event size?</summary>
+                    <p>The free Gathering plan is capped at 40 photos to keep small events tidy. Event and Host both remove that limit entirely.</p>
+                </details>
+            </div>
+        </section>
+
+        <section class="cta-banner">
+            <div class="cta-hex" aria-hidden="true"></div>
+            <h2>Ready to start your hive?</h2>
+            <p>Free to create. Ready in under a minute.</p>
+            <a href="https://momenthive.amfteksolutions.co.uk/Account/Register" class="btn btn-primary btn-large">Create an event</a>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-top">
+            <div class="footer-brand">
+                <img src="images/momenthive-logo-transluscent.png" alt="MomentHive Logo">
+                <p>Every moment from your event, gathered in one place.</p>
+            </div>
+            <div class="footer-links">
+                <div>
+                    <h4>Product</h4>
+                    <a href="index.html#how-it-works">How it works</a>
+                    <a href="pricing.html">Pricing</a>
+                </div>
+                <div>
+                    <h4>Company</h4>
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div>
+                    <h4>Account</h4>
+                    <a href="https://momenthive.amfteksolutions.co.uk/Account/Login">Log in</a>
+                    <a href="https://momenthive.amfteksolutions.co.uk/Account/Register">Sign up</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 MomentHive. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>
