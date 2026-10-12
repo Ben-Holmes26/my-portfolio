@@ -2,7 +2,7 @@
 
 Personal portfolio site, served with GitHub Pages at https://ben-holmes26.github.io/my-portfolio/
 
-Static HTML, CSS and JavaScript with no build step. The design language (gold hexagons, Fraunces + Inter)
+Static HTML, CSS and JavaScript with no build step. The design language (midnight navy with gold and neon accents, Playfair Display + Inter)
 comes from [MomentHive](https://momenthive.amfteksolutions.co.uk/), one of the featured projects.
 
 - `index.html`: single-page portfolio

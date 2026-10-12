@@ -7,15 +7,15 @@
     <meta name="author" content="Ben Holmes" />
     <meta name="description" content="Ben Holmes — Software Engineer in Lancashire, UK. .NET developer building business systems, cross-platform apps and AI-powered tools." />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#faf7f2" media="(prefers-color-scheme: light)">
-    <meta name="theme-color" content="#121319" media="(prefers-color-scheme: dark)">
+    <meta name="theme-color" content="#f7f2ea" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#070d20" media="(prefers-color-scheme: dark)">
     <meta property="og:title" content="Ben Holmes — Software Engineer" />
     <meta property="og:description" content=".NET developer building business systems, cross-platform apps and AI-powered tools." />
     <meta property="og:type" content="website" />
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/styles.css">
     <title>Ben Holmes | Software Engineer</title>
 </head>
@@ -67,27 +67,16 @@
             </div>
 
             <div class="hero-art" aria-hidden="true">
-                <svg viewBox="78 24 324 308" class="hex-cluster">
-                    <defs>
-                        <linearGradient id="heroGold" x1="0" y1="0" x2="1" y2="1">
-                            <stop offset="0" stop-color="#f6b73c" />
-                            <stop offset="1" stop-color="#c96f0c" />
-                        </linearGradient>
-                    </defs>
-                    <polygon class="hex" points="188,34 236.5,62 236.5,118 188,146 139.5,118 139.5,62" />
-                    <polygon class="hex hex-fill" points="292,34 340.5,62 340.5,118 292,146 243.5,118 243.5,62" />
-                    <polygon class="hex hex-fill" points="136,124 184.5,152 184.5,208 136,236 87.5,208 87.5,152" />
-                    <polygon class="hex-core" points="240,124 288.5,152 288.5,208 240,236 191.5,208 191.5,152" fill="url(#heroGold)" />
-                    <polygon class="hex" points="344,124 392.5,152 392.5,208 344,236 295.5,208 295.5,152" />
-                    <polygon class="hex" points="188,214 236.5,242 236.5,298 188,326 139.5,298 139.5,242" />
-                    <polygon class="hex hex-fill" points="292,214 340.5,242 340.5,298 292,326 243.5,298 243.5,242" />
-                    <text class="hex-label" x="188" y="90">C#</text>
-                    <text class="hex-label" x="292" y="90">.NET</text>
-                    <text class="hex-label small" x="136" y="180">SQL</text>
-                    <text class="hex-label core" x="240" y="180">{ }</text>
-                    <text class="hex-label small" x="344" y="180">MAUI</text>
-                    <text class="hex-label small" x="188" y="270">Azure</text>
-                    <text class="hex-label" x="292" y="270">AI</text>
+                <svg viewBox="0 0 440 360" class="track-art">
+                    <path class="track-line" d="M0 300C158 300 291 247.5 288 175C288 143 262 117 230 117C198 117 172 143 172 175C172 236 256 247.5 340 242C380 265 405 70 440 70" />
+                    <path class="track-dots" d="M0 300C158 300 291 247.5 288 175C288 143 262 117 230 117C198 117 172 143 172 175C172 236 256 247.5 340 242C380 265 405 70 440 70" />
+                    <g class="tile gold"><rect x="59" y="85" width="72" height="40" rx="10" /><text x="95" y="105">.NET</text></g>
+                    <g class="tile pink"><rect x="39" y="185" width="72" height="40" rx="10" /><text x="75" y="205">C#</text></g>
+                    <g class="tile cyan"><rect x="294" y="38" width="72" height="40" rx="10" /><text x="330" y="58">MAUI</text></g>
+                    <g class="tile lilac"><rect x="104" y="305" width="72" height="40" rx="10" /><text x="140" y="325">Azure</text></g>
+                    <g class="tile gold"><rect x="254" y="305" width="72" height="40" rx="10" /><text x="290" y="325">SQL</text></g>
+                    <g class="tile pink"><rect x="372" y="290" width="56" height="40" rx="10" /><text x="400" y="310">AI</text></g>
+                    <g class="tile core"><rect x="198" y="143" width="64" height="64" rx="16" /><text x="230" y="175">{ }</text></g>
                 </svg>
             </div>
         </section>
@@ -376,8 +365,6 @@
 
         <section id="contact" class="cta-section">
             <div class="cta-banner">
-                <div class="cta-hex" aria-hidden="true"></div>
-                <div class="cta-hex left" aria-hidden="true"></div>
                 <h2>Let's build something <span class="accent">worth keeping.</span></h2>
                 <p>Open to conversations about software engineering roles, collaborations, or anything you've seen here.</p>
                 <div class="hero-ctas">
